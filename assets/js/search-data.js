@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-mysql-server-not-running-pada-zimbra",
+        
+          title: "mysql.server not running pada Zimbra",
+        
+        description: "Memperbaiki InnoDB space header page consists of zero bytes in tablespace ./zimbra/flush_enforcer.ibd (table zimbra/flush_enforcer)",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fixing-zimbra-mysql-crash/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
