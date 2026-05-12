@@ -144,5 +144,5 @@ Jika berhasil, maka tidak akan menampilkan `mysql.server not running` ketika ver
 
 ## References
 
-https://forums.zimbra.org/viewtopic.php?t=8462
-https://blog.bartlweb.net/2021/12/mysql-server-von-zimbra-startet-nach-einem-crash-nicht-mehr/
+- https://forums.zimbra.org/viewtopic.php?t=8462
+- https://blog.bartlweb.net/2021/12/mysql-server-von-zimbra-startet-nach-einem-crash-nicht-mehr/
