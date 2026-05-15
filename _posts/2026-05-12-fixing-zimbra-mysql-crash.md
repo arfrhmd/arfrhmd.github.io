@@ -1,8 +1,8 @@
 ---
 layout: post
-title: mysql.server not running pada Zimbra
+title: Mysql.server Not Running pada Zimbra 8.8.15
 date: 2026-05-12 09:01:00
-description: Memperbaiki InnoDB space header page consists of zero bytes in tablespace ./zimbra/flush_enforcer.ibd (table zimbra/flush_enforcer)
+description: 
 tags: recovery zimbra mysql-error
 categories: zimbra
 ---
@@ -101,9 +101,7 @@ zmcontrol stop
 cp -rp /opt/zimbra/db/data /opt/zimbra/db/data.backup.$(date +%Y%m%d)
 ```
 
-Command ini tujuannya untuk ngebuat folder backup menjadi `/opt/zimbra/db/data.backup.20260512`.
-
-> Pastiin folder backup ini juga disalin di disk atau server lain biar aman.
+Command ini tujuannya untuk ngebuat folder backup menjadi `/opt/zimbra/db/data.backup.20260512`. **Pastikan folder backup ini juga disalin di disk atau server lain biar aman**.
 
 ## Recovery Steps
 
@@ -144,5 +142,5 @@ Jika berhasil, maka tidak akan menampilkan `mysql.server not running` ketika ver
 
 ## References
 
-https://forums.zimbra.org/viewtopic.php?t=8462
-https://blog.bartlweb.net/2021/12/mysql-server-von-zimbra-startet-nach-einem-crash-nicht-mehr/
+- [https://forums.zimbra.org/viewtopic.php?t=8462](https://forums.zimbra.org/viewtopic.php?t=8462)
+- [https://blog.bartlweb.net/2021/12/mysql-server-von-zimbra-startet-nach-einem-crash-nicht-mehr/](https://blog.bartlweb.net/2021/12/mysql-server-von-zimbra-startet-nach-einem-crash-nicht-mehr/)
