@@ -72,11 +72,22 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-mysql-server-not-running-pada-zimbra",
+            },{id: "post-instalasi-ssl-let-39-s-encrypt-pada-zimbra-8-8-15-metode-dns",
         
-          title: "mysql.server not running pada Zimbra",
+          title: "Instalasi SSL Let&#39;s Encrypt pada Zimbra 8.8.15 (Metode DNS)",
         
-        description: "Memperbaiki InnoDB space header page consists of zero bytes in tablespace ./zimbra/flush_enforcer.ibd (table zimbra/flush_enforcer)",
+        description: "Artikel ini meliputi tahapan instalasi SSL Let&#39;s Encrypt pada layanan Zimbra 8.8.15 di CentOS 8 menggunakan metode DNS.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/migrasi-server-zimbra/";
+          
+        },
+      },{id: "post-mysql-server-not-running-pada-zimbra-8-8-15",
+        
+          title: "Mysql.server Not Running pada Zimbra 8.8.15",
+        
+        description: "",
         section: "Posts",
         handler: () => {
           
