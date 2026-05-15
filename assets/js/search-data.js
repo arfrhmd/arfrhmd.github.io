@@ -80,7 +80,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/migrasi-server-zimbra/";
+            window.location.href = "/blog/2026/instalasi-ssl-letsencrypt-pada-zimbra-8815/";
           
         },
       },{id: "post-mysql-server-not-running-pada-zimbra-8-8-15",
