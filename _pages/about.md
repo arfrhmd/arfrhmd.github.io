@@ -2,14 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Semesta tidak menjanjikan jalan mudah, tetapi selalu menyediakan arah.
+subtitle: <small>Semesta tidak menjanjikan jalan mudah, tetapi selalu menyediakan arah.</small>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>Bogor, Indonesia</p>
+  image_circular: false # crops the image to make it circular
+  more_info: 
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -25,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Halo, saya Arif Rahmadi, mahasiswa Teknik Informatika dengan fokus pada jaringan komputer, Linux system administration, dan infrastruktur IT. Saya memiliki pengalaman dalam monitoring jaringan, konfigurasi MikroTik, troubleshooting sistem, serta IT support.
+Halo, saya Arif Rahmadi, mahasiswa Teknik Informatika dengan fokus pada jaringan komputer, Linux sysadmin, dan infrastruktur IT. Saya memiliki pengalaman dalam monitoring jaringan, konfigurasi MikroTik, troubleshooting sistem, serta IT support.
 
 Saya tertarik pada cybersecurity, analisis data, dan pengembangan teknologi yang efisien serta bermanfaat. Saya juga senang mempelajari hal baru dan terus mengembangkan kemampuan teknis maupun problem solving.
 
