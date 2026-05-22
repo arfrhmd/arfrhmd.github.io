@@ -88,14 +88,14 @@ Setelah tahu masalahnya, saya mulai untuk memperbaiki hal tersebut.
 
 Ini langkah yang penting dilakukan sebelum melakukan perubahan pada sistem manapun. Saya backup terlebih dahulu database saat ini untuk mencegah terjadinya kesalahan pada step berikutnya.
 
-1. Jalankan sebagai user `zimbra` dan stop seluruh service Zimbra
+Jalankan sebagai user `zimbra` dan stop seluruh service Zimbra
 
 ```bash
 su - zimbra
 zmcontrol stop
 ```
 
-2. Jalankan sebagai user `root`, copy direktori database saat ini
+Jalankan sebagai user `root`, copy direktori database saat ini
 
 ```bash
 cp -rp /opt/zimbra/db/data /opt/zimbra/db/data.backup.$(date +%Y%m%d)
@@ -105,7 +105,7 @@ Command ini tujuannya untuk ngebuat folder backup menjadi `/opt/zimbra/db/data.b
 
 ## Recovery Steps
 
-1. Jalankan sebagai user `root` dan arahkan ke direktori database. Lalu pindahkan file `flush_enforcer.ibd`. Menurut keterangan di forum Zimbra, file ini dapat dipulihkan dengan sendirinya ketika Zimbra mendeteksi file ini tidak ada.
+Jalankan sebagai user `root` dan arahkan ke direktori database. Lalu pindahkan file `flush_enforcer.ibd`. Menurut keterangan di forum Zimbra, file ini dapat dipulihkan dengan sendirinya ketika Zimbra mendeteksi file ini tidak ada.
 
 ```bash
 cd /opt/zimbra/db/data/zimbra
@@ -113,26 +113,26 @@ mkdir /tmp/zimbra_table_backup
 mv flush_enforcer.frm flush_enforcer.ibd /tmp/zimbra_table_backup/
 ```
 
-2. Hapus Transaction Coordinator Log (`tc.log`), terkadang ini menjadi penyebab startup Zimbra gagal. File ini aman untuk dipindah/dihapus.
+Hapus Transaction Coordinator Log (`tc.log`), terkadang ini menjadi penyebab startup Zimbra gagal. File ini aman untuk dipindah/dihapus.
 
 ```bash
 rm -f /opt/zimbra/db/data/tc.log
 ```
 
-3. Setelah memindahkan file, pastikan permission pada direktori sudah tepat
+Setelah memindahkan file, pastikan permission pada direktori sudah tepat
 
 ```bash
 chown -R zimbra:zimbra /opt/zimbra/db/data
 ```
 
-4. Aktifkan lagi service Zimbra
+Aktifkan lagi service Zimbra
 
 ```bash
 su - zimbra
 zmcontrol start
 ```
 
-5. Verifikasi status Zimbra
+Verifikasi status Zimbra
 
 ```bash
 zmcontrol status

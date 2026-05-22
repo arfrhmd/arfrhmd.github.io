@@ -40,7 +40,7 @@ sudo certbot certonly --manual --preferred-challenges dns -d mail.rahmadi.id
 
 Setelah ini saya diberi sebuah kode acak untuk dimasukkan ke dalam record TXT pada DNS dengan tampilan seperti berikut:
 
-```
+```text
 Please deploy a DNS TXT record under the name:
 _acme-challenge.mail.rahmadi.id
 with the following value:
@@ -49,7 +49,7 @@ nkE22ZcsbxobX5W56iEDbeN1T7cduyhE7jJrqR6Z7fE
 
 Setelah mendapatkan kode acak, tambahkan DNS record dengan tipe TXT pada domain control panel, kira-kira seperti ini:
 
-```
+```text
 Hostname                            Type    TTL    Value
 _acme-challenge.mail.rahmadi.id     TXT     1800   nkE22ZcsbxobX5W56iEDbeN1T7cduyhE7jJrqR6Z7fE
 ```
@@ -58,7 +58,7 @@ Setelah DNS record ditambahkan, verifikasi propagasi menggunakan [DNS Checker](h
 
 Jika propagasi sudah selesai, kembali ke terminal server dan konfirmasi verifikasi Let's Encrypt dengan menekan tombol `Enter` dan SSL akan segera terbit dengan tampilan seperti ini:
 
-```
+```text
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
    /etc/letsencrypt/live/mail.rahmadi.id/fullchain.pem
@@ -119,7 +119,7 @@ su - zimbra
 
 *Jika semua valid, maka tampilannya seperti berikut:*
 
-```
+```text
 ** Verifying '/etc/letsencrypt/live/mail.rahmadi.id/cert.pem' against '/opt/zimbra/ssl/zimbra/commercial/commercial.key'
 Certificate '/etc/letsencrypt/live/mail.rahmadi.id/cert.pem' and private key '/opt/zimbra/ssl/zimbra/commercial/commercial.key' match.
 ** Verifying '/etc/letsencrypt/live/mail.rahmadi.id/cert.pem' against '/etc/letsencrypt/live/mail.rahmadi.id/fullchain.pem'
@@ -128,7 +128,7 @@ Valid certificate chain: /etc/letsencrypt/live/mail.rahmadi.id/cert.pem: OK
 
 Lanjut di tahap terakhir, deploy SSL
 
-```
+```bash
 /opt/zimbra/bin/zmcertmgr deploycrt comm /etc/letsencrypt/live/mail.rahmadi.id/cert.pem /etc/letsencrypt/live/mail.rahmadi.id/fullchain.pem
 ```
 
