@@ -7,7 +7,7 @@ tags: prometheus docker
 categories: monitoring
 ---
 
-Umumnya Prometheus menyimpan data selama 15 hari, karena ada kebutuhan yang mengharuskan penyimpanan data prometheus lebih lama. Cukup tambahkan command berikut:
+Umumnya Prometheus menyimpan data selama 15 hari, karena saya ada kebutuhan yang mengharuskan penyimpanan data prometheus lebih lama. Saya cukup tambahkan command berikut:
 
 ```bash
 --storage.tsdb.retention.time=30d
@@ -15,7 +15,7 @@ Umumnya Prometheus menyimpan data selama 15 hari, karena ada kebutuhan yang meng
 
 Command ini berguna untuk mengubah retensi data penyimpanan menjadi 30 hari. Kalau diterapkan di Docker menjadi seperti ini:
 
-```dockerfile
+```Dockerfile
 services:
   prometheus:
     image: prom/prometheus:v2.37.0
