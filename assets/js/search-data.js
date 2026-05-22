@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-instalasi-ssl-let-39-s-encrypt-pada-zimbra-8-8-15-metode-dns",
+            },{id: "post-ubah-retensi-data-penyimpanan-di-prometheus",
+        
+          title: "Ubah retensi data penyimpanan di Prometheus",
+        
+        description: "Umumnya Prometheus menyimpan data selama 15 hari, karena ada kebutuhan yang mengharuskan penyimpanan data prometheus lebih lama",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/change-retention-data-on-prometheus/";
+          
+        },
+      },{id: "post-instalasi-ssl-let-39-s-encrypt-pada-zimbra-8-8-15-metode-dns",
         
           title: "Instalasi SSL Let&#39;s Encrypt pada Zimbra 8.8.15 (Metode DNS)",
         
